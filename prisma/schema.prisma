@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Document {
+  id               String   @id @default(cuid())
+  filename         String
+  fileType         String
+  docType          String?
+  supplier         String?
+  docNumber        String?
+  issueDate        String?
+  dueDate          String?
+  currency         String?
+  lineItems        String?
+  subtotal         Float?
+  tax              Float?
+  total            Float?
+  status           String   @default("uploaded")
+  validationIssues String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+}
