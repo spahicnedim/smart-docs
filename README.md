@@ -55,7 +55,7 @@ Edit `.env` and add your Anthropic API key:
 
 ```env
 ANTHROPIC_API_KEY=your_key_here
-DATABASE_URL="file:./prisma/dev.db"
+POSTGRES_URL="file:./prisma/dev.db"
 ```
 
 **4. Set up the database**
