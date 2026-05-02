@@ -5,10 +5,5 @@ services:
       - "3000:3000"
     environment:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
-      - DATABASE_URL=file:./prisma/dev.db
-    volumes:
-      - sqlite_data:/app/prisma
+      - POSTGRES_URL=${POSTGRES_URL}
     restart: unless-stopped
-
-volumes:
-  sqlite_data:

@@ -1400,6 +1400,7 @@ export type DocumentCreateManyArgs<ExtArgs extends runtime.Types.Extensions.Inte
    * The data used to create many Documents.
    */
   data: Prisma.DocumentCreateManyInput | Prisma.DocumentCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**
@@ -1418,6 +1419,7 @@ export type DocumentCreateManyAndReturnArgs<ExtArgs extends runtime.Types.Extens
    * The data used to create many Documents.
    */
   data: Prisma.DocumentCreateManyInput | Prisma.DocumentCreateManyInput[]
+  skipDuplicates?: boolean
 }
 
 /**

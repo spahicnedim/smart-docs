@@ -36,7 +36,7 @@ The validation engine is designed to catch inconsistencies regardless of source.
 
 2. **Discount/credit support** — The current model does not have a `discount` field. Documents with discounts will correctly flag a total mismatch, but the system cannot explain why. Adding a `discount` field to the extraction model and validation logic would resolve this.
 
-3. **Persistent storage for deployment** — SQLite resets on Vercel redeploy. For production I would switch to Postgres (e.g. Neon or Supabase free tier).
+3. **Persistent storage** — Using PostgreSQL (Neon) for production deployment on Vercel. For even better scalability, would consider connection pooling with PgBouncer.
 
 4. **Extraction confidence scores** — Claude could return a confidence level per field, allowing the UI to highlight uncertain extractions differently from definite ones.
 
