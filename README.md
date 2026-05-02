@@ -4,7 +4,7 @@ A full-stack application for processing business documents (invoices and purchas
 
 ## Live Demo
 
-[Add link after deployment]
+https://smart-docs-ten.vercel.app/
 
 ## Tech Stack
 
@@ -28,7 +28,7 @@ A full-stack application for processing business documents (invoices and purchas
 ## Prerequisites
 
 - Node.js 18+
-- Anthropic API key ([console.anthropic.com](https://console.anthropic.com))
+- Anthropic API key ([platform.claude.com](https://platform.claude.com/))
 
 ## Setup
 
